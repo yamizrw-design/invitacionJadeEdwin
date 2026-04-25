@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Jade y Edwuin</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Georgia', serif;
+    background: linear-gradient(#fdfbfb, #ebedee);
+    overflow-x:hidden;
+}
+/* caballo CAMINANDO */
+
+.caba{
+position:fixed;
+bottom:30px;
+font-size:100px;
+animation:caminar 18s linear infinite;
+}
+
+@keyframes caminar{
+0%{right:-100px}
+100%{right:110%}
+}
+
+
+/* CONTENEDOR */
+.container{
+    text-align:center;
+    padding:30px 15px;
+}
+
+/* TARJETAS */
+.card{
+    max-width:600px;
+    margin:20px auto;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    padding:25px;
+    animation:fadeIn 1.5s ease;
+    position:relative;
+}
+
+/* TITULOS */
+h1{font-size:32px;}
+.gold{color:#c9a646;}
+.green{color:#2e7d32;}
+
+/* DIVISOR */
+.divider{
+    width:60%;
+    height:2px;
+    margin:20px auto;
+    background:linear-gradient(to right, transparent, #c9a646, transparent);
+}
+
+/* TEXTO */
+p{
+    font-size:18px;
+    line-height:1.5;
+}
+
+/* BOTON */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+
+/* ANIMACIONES GENERALES */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* ===== BAUTIZO ===== */
+.baptism{
+    overflow:hidden;
+}
+
+/* ESTRELLAS */
+.stars{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+}
+
+.star{
+    position:absolute;
+    color:#f7e7a9;
+    font-size:18px;
+    animation:twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+    0%,100%{opacity:0.3;}
+    50%{opacity:1;}
+}
+
+/* CRUZ */
+.cross{
+    font-size:40px;
+    color:#c9a646;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{opacity:0.6;}
+    to{opacity:1;}
+}
+
+/* ANGELITOS */
+.angel{
+    position:absolute;
+    font-size:28px;
+    animation:floatAngel 6s infinite linear;
+}
+
+.angel:nth-child(1){left:10%; animation-duration:7s;}
+.angel:nth-child(2){left:80%; animation-duration:6s;}
+
+@keyframes floatAngel{
+    0%{transform:translateY(50px); opacity:0;}
+    50%{opacity:1;}
+    100%{transform:translateY(-120px); opacity:0;}
+}
+
+/* GLOBOS */
+.balloon{
+    position:fixed;
+    bottom:-100px;
+    width:40px;
+    height:50px;
+    background:red;
+    border-radius:50%;
+    animation:float 10s infinite ease-in;
+}
+
+.balloon:nth-child(1){left:10%; background:#ff5252;}
+.balloon:nth-child(2){left:30%; background:#ffd740;}
+.balloon:nth-child(3){left:60%; background:#69f0ae;}
+.balloon:nth-child(4){left:80%; background:#40c4ff;}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-110vh);}
+}
+button{
+padding:14px 20px;
+margin:8px;
+border:none;
+border-radius:14px;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.map{
+background:#4285F4;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- GLOBOS -->
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+
+<!-- DINOSAURIO -->
+
+<div class="caba">🐎</div>
+
+<div class="container">
+
+    <!-- CUMPLE -->
+    <div class="card">
+        <h1 class="green">¡Estás invitado a mi presentación!</h1>
+        <h2>Jade Elizabeth 🐎</h2>
+
+        <div class="divider"></div>
+
+        <p>Te invito a celebrar mis 4 años conmigo un día lleno de diversión.</p>
+		<p><strong>Mis Padrinos:</strong><br>
+        Victor Hugo Rodan Ortuño<br>
+        Ana Karen Espejel Vargas</p>
+        
+	<img src="Escara.jpg" style="width: 100%; height: auto"alt="Descripción de la imagen">
+	<div class="divider"></div>
+       <p>y también </p>
+    </div>
+
+    <!-- BAUTIZO -->
+    <div class="card baptism">
+
+        <!-- ESTRELLAS -->
+        <div class="stars">
+            <div class="star" style="top:10%; left:20%;">✦</div>
+            <div class="star" style="top:30%; left:70%;">✧</div>
+            <div class="star" style="top:60%; left:40%;">✦</div>
+            <div class="star" style="top:80%; left:80%;">✧</div>
+        </div>
+
+        <!-- ANGELITOS -->
+        <div class="angel">👼</div>
+        <div class="angel">👼</div>
+
+        <h1 class="gold">¡Estás invitado a Mi Bautizo!</h1>
+        <h2>🪽 Edwuin Zain 🪽</h2>
+
+      
+
+        <div class="divider"></div>
+
+        <p>
+        Con mucha alegría queremos invitarte a este momento tan especial.
+        </p>
+
+
+        <p><strong>Mis Padrinos:</strong><br>
+        Julio César Roldán de Luna<br>
+        Tiare Selena Quiroz Arellano</p>
+<img src="Charro.jpg" style="width: 100%; height: auto" alt="Descripción de la imagen">
+        <div class="divider"></div>
+
+
+    </div>
+	
+	 <!-- datos -->
+
+
+    <div class="card baptism">
+        	 <p><strong>
+        Ambos eventos se llevarán a cabo el dia
+        </p></strong>
+	 <p><strong>📅 </strong> 30 de Mayo 2026</p>
+	 <p><strong>⏰ </strong> 2:00 pm misa en Parroquia de Santa María de Guadalupe</p>
+        <p><strong>📍 </strong>Recepción  3:00 pm Jardín de eventos sociales "La Palma"<br>
+</p>
+<a href="https://maps.app.goo.gl/dHPcbzs6j7TQurvu5">
+<button class="map">Ver ubicación del Jardín</button>
+</a>
+
+<a href="https://maps.app.goo.gl/gGDQy5ehCNnePASm8">
+<button class="map">Ver ubicación de Iglesia</button></a>
+     <p>Será un honor contar con tu presencia.</p>
+    <p>** por favor confirma tu asistencia **</p>
+        <a       href="https://wa.me/5215529314784?text=Confirmo%20mi%20asistencia%20a%20la%20fiesta%20de%20Jade%20y%20Edwuin">
+<button class="whatsapp">Confirmar a Lizbeth</button>
+</a>
+	</div>
+</div>
+
+</body>
+</html>
+   
